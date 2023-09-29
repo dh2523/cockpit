@@ -15,7 +15,7 @@ srcdir="${0%/*}"
 case "${1:-}" in
     rpm)
         # configure with the same flags as when building an RPM
-        exec rpmbuild -D '_topdir tmp/rpmbuild' -D 'make_build #' \    
+        exec rpmbuild -D '_topdir tmp/rpmbuild' -D 'make_build #' \ a
             --build-in-place -bc tools/cockpit.spec ;;
 
     *)
